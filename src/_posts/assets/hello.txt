@@ -1,0 +1,1 @@
+Hello, World! -- from <i>_posts/assets/hello.txt</i>

@@ -1,0 +1,11 @@
+- name: Projects
+  url:  /projects/
+
+- name: Videos
+  url:  /videos/
+
+- name: Resume
+  url:  /resume/
+
+- name: About
+  url:  /about/

@@ -1,0 +1,25 @@
+# Site settings
+title: Daohui Li
+header-img: img/home-bg.jpg
+email: daohui2004@gmail.com
+copyright_name: 
+description: "Blog site!"
+baseurl: ""
+url: "http://daohui.github.io"
+github_username:  daohui
+email_username:  daohui2004@gmail.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+source: src
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+plugins: [jekyll-paginate, jekyll-feed]
