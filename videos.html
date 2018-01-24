@@ -1,0 +1,14 @@
+---
+layout: page
+title: "Videos"
+description: "Selection of my videos at youtube"
+header-img: "img/video-frame.png"
+---
+
+{% for video in site.data.video-playlist %}
+<div>
+<div class="video description">{{ video.description }}</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{video.id}}" frameborder="0" allowfullscreen></iframe>
+</div>
+<br/>
+{% endfor %}
