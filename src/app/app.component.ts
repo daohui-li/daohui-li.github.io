@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material';
+import { MainComponent } from './main/main.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'resume-angular6';
+  @ViewChild(MatSidenav) sidenav: MatSidenav;
+
+  openSidenav(open: boolean) {
+    console.log('openSidenav:', open, this.sidenav);
+    if (open) {
+      this.sidenav.open();
+    } else {
+      this.sidenav.close();
+    }
+  }
 }

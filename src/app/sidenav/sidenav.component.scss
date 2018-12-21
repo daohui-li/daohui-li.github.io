@@ -1,0 +1,14 @@
+@import "../../assets/data/custom.scss";
+
+.sidenav-content {
+    height: 100%;
+    border-color: black;
+    display: block;
+  
+    background-color: mat-color($my-app-primary, 400);
+    color: whitesmoke!important;
+}
+
+p {
+    margin: 0px;
+}
