@@ -1,7 +1,36 @@
-<div class="sidenav-content">
-  <p>
-    sidenav works!
-  </p>
-  
-  <button type="button" (click)="closeSidenav()">Close Sidenav</button>
+<div class="sidenav-content" flex fxLayout="column">
+  <div>
+    <button mat-icon-button class="close-sidenav-button" (click)="closeSidenav()">
+      <mat-icon>keyboard_backspace</mat-icon>
+    </button>
+  </div>
+
+  <div class="user-info">
+    <img class="g-circle-img" src="assets/images/daohui.jpg" alt='' />
+  </div>
+  <div class="user-info2 text">
+    <p id="user-name-id">{{user.name}}</p>
+    <p id="title">{{user.title}}</p>
+    <p id="address">{{user.address}}</p>
+  </div>
+
+  <ul id="route-list-id" *ngFor="let route of routes">
+    <li *ngIf="route.display">
+        <a routerLink="{{route.path}}" (click)="closeSidenav()">{{route.display}}</a>
+    </li>
+  </ul>
+
+  <span class="g-flex-filler"></span>
+
+  <div class="ion-icon" flex fxLayoutGap="2px" fxLayout="row">
+    <span class="g-flex-filler"></span>
+    <a href="{{user.addressUrl}}">
+      <mat-icon class="mat-icon">place</mat-icon>
+    </a>
+    <a href="mailto:{{user.email}}" style="color:white!important;">
+      <mat-icon class="mat-icon">email</mat-icon>
+    </a>
+    <a href="{{user.linkedin}}">
+      <i class="icon ion-social-linkedin"></i></a>
+  </div>
 </div>

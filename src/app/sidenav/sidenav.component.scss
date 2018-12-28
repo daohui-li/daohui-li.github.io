@@ -9,6 +9,40 @@
     color: whitesmoke!important;
 }
 
-p {
-    margin: 0px;
+.g-circle-img {
+    display: block;
+    margin: auto;
+    width: 100px;
+
+    border-radius: 50%;
+  }
+
+  button {
+    background:none!important;
+    color:inherit;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+.user-info,
+.user-info2 {
+    display: block;
+    margin: auto;
+}
+  
+.user-info2 {
+    margin-top: 15px;
+    text-align: center!important;
+}
+
+/* has >> before each item */
+ul li:before {
+    content: "\0BB \020";
+}
+/* have space between item space, and no item marker */
+li {
+    margin-bottom: -20px!important;
+    list-style-type: none;
 }

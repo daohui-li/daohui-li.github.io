@@ -1,0 +1,100 @@
+[
+    {"subject": "Computer Languages",
+     "items": [
+       {
+         "name": "Java",
+         "description": "syntax, Spring Boot, Spring Cloud, and new features in Java 7 and 8."
+       },
+       {
+         "name": "Python",
+         "description": "syntax, syntax, standard modules."
+       },
+       {
+         "name": "C/C++",
+         "description": "syntax, stdlib."
+       },
+       {
+         "name": "JavaScript",
+         "description": "syntax, and derived frameworks such as <i>Node.js, AngularJS, Angular</i>"
+       },
+       {
+         "name": "Shell scripts",
+         "description": "excellent in written various utilities scripts; such as <i>bash, ksh</i> in Linux/Unix environment, and <i>Windows shell scripts</i>, and <i>Powershell script</i> in <i>Windows</i> environment."
+       },
+       {
+         "name": "HTML5, CSS",
+         "description": "Syntax, and general knowledge"
+       },
+       {
+         "name": "Network Protocols",
+         "description": "TCP, UDP, HTTP, SNMP, SOAP, FTP"
+       }
+     ]},
+    {
+      "subject": "Platforms",
+      "items":[
+        {
+          "name": "Windows",
+          "description": "Proficient in Windows 7 and 10 Professional"
+        },
+        {
+          "name": "Unix/Linux",
+          "description": "Proficient in configuring and using <i>RedHat, Ubuntu,</i> and <i>ArchLinux</i>."
+        },
+        {
+          "name": "AWS",
+          "description": "knowledge of configuration of <i>IAM, EC2, Load Balancer, S3</i> and <i>SDB</i>"
+        },
+        {
+          "name": "Android",
+          "description": "Knowledge of developing and using applications in <i>Android</i> environment."
+        }
+      ]
+    },
+    {
+      "subject": "Tools",
+      "items": [
+        {
+          "name": "IDE",
+          "description": "<i>IntelliJ, Eclipse</i> for Java application development; <i>VS Code</i> for JavaScript, HTML, CSS development; <i>Android Studio</i> for Android application development </li>"
+        },
+        {
+          "name": "Network monitor/capture",
+          "description": "Proficient in using <i>Wireshark, tcpdump, snoop, Postman</i>, and <i>curl</i>"
+        }
+      ]
+    },
+    {
+      "subject": "Languages",
+      "items": [
+        {
+          "name": "Chinese",
+          "description": "native"
+        },
+        {
+          "name": "English",
+          "description": "writing and oral proficiency"
+        },
+        {
+          "name": "French",
+          "description": "level 24 in <i>Duolingo</i>"
+        },
+        {
+          "name": "Spanish",
+          "description": "level 13 in <i>Duolingo</i>"
+        }
+      ]
+    },
+    {
+      "subject": "Hobbies",
+      "items": [
+        {
+          "description": "Exercise both indoor and outdoor"
+        },
+        {
+          "description": "Travel"
+        }
+      ]
+    }
+]
+  

@@ -1,0 +1,159 @@
+// ----------------  THE BASICS
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+
+// ----------------  THE FONTS
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+}
+
+.container>h2 {
+  text-decoration: underline;
+}
+// ----------------  LAYOUT
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+// ----------------  THE FONTS
+
+$border-color: rgba(black, .3);
+
+.timeline-item {
+  padding: 1em 1em;
+  position: relative;
+  color: rgba(black, .7);
+  border-left: 2px solid $border-color;
+
+  p {
+    font-size: 1rem;
+  }
+
+  .date-time {
+    display: block;
+    margin-top: -1em;
+    margin-bottom: -1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: .785rem;
+    font-weight: bold;
+  }
+
+  &::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .785rem;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid $border-color;
+    background: white;
+  }
+
+  &:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        $border-color 60%,
+        rgba($border-color, 0)) 1 100%
+  ;
+  }
+}
+
+div.request {
+  float: right;
+}
+
+.download {
+  position: relative;
+  display: block;
+  margin: 20px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.35em;
+  text-align: center;
+  opacity: 0.3;
+  line-height: 2em;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  margin-right: 0;
+}
+.download:hover, .download:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.download span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px 0;
+  /*box-shadow: inset 0 3px #0390bb;*/
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  transition: background 0.6s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+.download span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  content: attr(data-hover);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+.download:hover span::before, .download:focus span::before {
+  -webkit-transform: rotateX(10deg);
+  -moz-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}

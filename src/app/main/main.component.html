@@ -1,7 +1,28 @@
-<div id="main-content">
-  <p>
-    main works!
-  </p>
+<div id="main-content" flex fxLayout="column">
+  <div>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="openSidenav()">
+          <mat-icon class="mat-icon">menu</mat-icon>
+        </button>
+        <span class="g-flex-filler"></span>
+        <h1>{{developer.name}}</h1>
+        <span class="g-flex-filler"></span>      
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+          <span class="g-flex-filler"></span>
+          <i>{{developer.description}}</i>
+          <span class="g-flex-filler"></span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
 
-  <button type="button" (click)="onClickAction()">Open Sidenav</button>
+  <!-- intentionally add the following, as router-outlet is calculated from the beginning  -->
+  <p>Hello, world!</p>
+  <p>Hello, world!</p>
+  <br/>
+
+  <div class="main-wrapper">
+    <router-outlet></router-outlet>
+  </div>
 </div>

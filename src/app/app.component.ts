@@ -12,7 +12,6 @@ export class AppComponent {
   @ViewChild(MatSidenav) sidenav: MatSidenav;
 
   openSidenav(open: boolean) {
-    console.log('openSidenav:', open, this.sidenav);
     if (open) {
       this.sidenav.open();
     } else {

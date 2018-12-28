@@ -1,0 +1,77 @@
+[
+    {"date": "Oct 2018",
+      "title": "Senior Advisor",
+      "company": "CVS Health",
+      "description": ["Full stack development with Angular for the front-end and Spring Boot for the back-end."]
+    },
+    {"date": "Feb 2018",
+      "title": "Consultant",
+      "company": "Randstad US",
+      "description": [
+        "<p>",
+        "Working with Verizon engineers on Verizon Enterprise Solutions (VES), which",
+        "integrates and customizes third-party software for Verizon system",
+        "infrastructure.",
+        "</p>"
+      ]
+    },
+    {"date": "Feb 2011",
+      "title": "Senior Staff Engineer",
+      "company": "Motorola Solutions",
+      "description": [
+        "<ul>",
+        "<li>",
+        "Customized EMC's Smart Network Configuration Manager (NCM), and integrated the NCM into Motorola configuration servers.",
+        "<ul class=\"detail\">",
+        "<li>Developed and/or customized drivers for network devices in Motorola radio systems</li>",
+        "<li>Diagnose integration issues with network sniffers and binary analysis tools.</li>",
+        "<li>Developed test framework for unit testing of driver code</li>",
+        "</ul>",
+        "</li>",
+        "<li>",
+        "Designed and Developed web applications in the distributed environments to provide Quality of Service (QoS) solutions for",
+        "LTE customers",
+        "<ul class=\"detail\">",
+        "<li>Developed micro-services using RESTful interface in tomcat service; the services were created based <i>Spring, Jersey and Hibernate</i> frameworks</li>",
+        "<li>Developed SOAP-based web service using Spring boot framework.</li>",
+        "</ul>",
+        "</li>",
+        "</ul>"
+      ]
+    },
+    {
+      "date": "2004",
+      "title": "Senior Staff Engineer",
+      "company": "Motorola",
+      "description": [
+        "<ul>",
+        "<li>",
+        "Led teams in developing and maintaining the performance servers of Motorola radio systems",
+        "<ul class=\"detail\">",
+        "<li>Developed C/C++ applications in both Unix and Windows platforms</li>",
+        "<li>Developed build framework using makefile</li>",
+        "</ul>",
+        "</li>",
+        "<li>",
+        "Customized EMC's Smart Network Configuration Manager (NCM), and integrated the NCM into Motorola configuration servers.",
+        "<ul class=\"detail\">",
+        "<li>Developed and/or customized drivers for network devices in Motorola radio systems</li>",
+        "<li>Diagnose integration issues with network sniffers and binary analysis tools.</li>",
+        "</ul>",
+        "</li>",
+        "</ul>",
+        "</div>"
+      ]
+    },
+    {
+      "date": "2000",
+      "title": "Senior Consultant",
+      "company": "Vitech International, Inc.",
+      "description": [
+        "<p>",
+        "Worked with Motorola engineers in development and maintenance of performance servers of Motorola radio systems",
+        "</p>"
+      ]
+    }
+]
+  

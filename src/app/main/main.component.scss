@@ -3,12 +3,48 @@
 #main-content {
     height: 100vh;
     width: 100vw;
-    background-color: lightgray;
     margin: 0px;
     padding: 0px;
 }
 
-p {
+mat-toolbar {
+    // background-color: mat-color($my-app-primary, 500);
+    position: fixed;
+    z-index: 2;
     margin: 0px;
+    padding: 0px;
 }
-    
+  
+mat-toolbar-row > h1 {
+    font-size: 32px!important;
+    padding-top: 35px;
+}
+mat-toolbar-row > i {
+    margin-top: -10px;
+}
+  
+.mat-icon {
+    padding: 0px;
+    color: white;
+}
+  
+.mat-icon-button {
+    background-color: mat-color($my-app-primary, 500);
+}
+
+button {
+    background:none!important;
+    color:inherit;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+}
+
+.main-wrapper {
+    // margin-top: 20px;
+    background-color: lightgrey;
+    // flex: 1 1 auto;
+    /* make toolbar stick by assigning scollbar here */
+    overflow: auto;
+}

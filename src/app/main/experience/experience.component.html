@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Professional Experience</h2>
+  
+    <ng-container *ngFor="let e of exp">
+      <div class="timeline-item">
+        <p class="date-time">{{e.date}}</p>
+        <h3>{{e.title}}, <i>{{e.company}}</i></h3>
+        <!--<p>description</p>-->
+        <div [innerHtml]="e.description"></div>
+      </div>
+    </ng-container>
+  
+</div>

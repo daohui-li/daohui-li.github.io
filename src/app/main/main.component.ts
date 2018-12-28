@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { AppConfig } from '../app-config';
 
 @Component({
   selector: 'app-main',
@@ -6,6 +7,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  developer = AppConfig.settings.user;
+
   @Output()
   openDrawerEvent = new EventEmitter<boolean>();
 
@@ -14,7 +17,7 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickAction() {
+  openSidenav() {
     this.openDrawerEvent.emit(true);
   }
 }

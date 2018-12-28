@@ -1,8 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { MatSidenav, MatSidenavModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,9 +9,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        MainComponent,
-        SidenavComponent
+        AppComponent
       ],
       imports: [
         MatSidenavModule,
@@ -59,7 +55,7 @@ describe('AppComponent', () => {
       expect(sidenav.attributes['mode']).toBe('over');
     });
 
-    // component.sidenav is null and 
+    // component.sidenav is null
     xit('should be opened when openSidenav() is called with true as input', () => {
       component.openSidenav(true);
       fixture.detectChanges();

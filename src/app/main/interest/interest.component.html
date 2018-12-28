@@ -1,0 +1,15 @@
+<div class="interest">
+
+    <ng-container *ngFor="let interest of interests">
+      <h2>{{interest.subject}}</h2>
+      <hr/>
+      <ul>
+        <li *ngFor="let item of interest.items">
+          <div [innerHtml] = "constructlist(item)"></div>
+        </li>
+      </ul>
+      <br/>
+    </ng-container>
+    <br/>
+</div>
+  

@@ -17,4 +17,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. the two newly created components contain a button to emit event, and the 
    parent component, app.component, monitors the event (via html) and open/close
    sidenav accordingly.
-3. introduce a custom stylesheet, assets/data/custom.scss, to customize the style. 
+3. introduce a custom stylesheet, assets/data/custom.scss, to customize the style.
+4. get editable _config_ data via _AppConfig_ service (using factory method to 
+   initialize the data before the application starts up).
+5. an alternative approach to read in editable data files are using _require_ 
+   (see _experience.component.ts_ and _interest.component.ts_).
+6. updated the test scripts:
+   * use schemas to limit the scope of the components to be tested
+   * use providers for service
+   * import RouterTestingModule for routing related tests.
+
+## TODO:
+1. The layout of _router-outlet_ is calculated from the top (ignoring toolbar). An
+   workaround is to pad several dummy lines (see _main.component.html_).
