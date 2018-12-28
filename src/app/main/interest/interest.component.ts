@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonItem, DisplayInterestData } from '../../models/interest-data';
 
 declare const require;
 
@@ -8,10 +9,10 @@ declare const require;
   styleUrls: ['./interest.component.scss']
 })
 export class InterestComponent implements OnInit {
-  readonly interests: InterestData[];
+  readonly interests: DisplayInterestData[];
 
   constructor() {
-    this.interests = require('src/assets/data/interest.json').map(js => new InterestData(js));
+    this.interests = require('src/assets/data/interest.json').map(js => new DisplayInterestData(js));
   }
 
   ngOnInit() {
@@ -24,23 +25,5 @@ export class InterestComponent implements OnInit {
     }
     text += ` ${item.description}`;
     return text;
-  }
-}
-interface JsonItem {
-  name?: string;
-  description: string;
-}
-interface JsonInterestData {
-  subject: string;
-  items: JsonItem[];
-}
-
-class InterestData implements JsonInterestData {
-  subject: string;
-  items: JsonItem[];
-
-  constructor(js: JsonInterestData) {
-    this.subject = js.subject;
-    this.items = js.items;
   }
 }

@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prod": "ng test && ng lint && ng build --prod --aot=true --preserve-symlinks --base-href /resume/"
   },
   "private": true,
   "dependencies": {

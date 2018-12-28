@@ -6,11 +6,12 @@ export const ButtonClickEvents = {
 };
 
 /** Simulate button, html click action */
-export function click(el: DebugElement |
-  HTMLElement, eventObj: any = ButtonClickEvents.left ) {
+export function click(
+    el: DebugElement | HTMLElement,
+    eventObj: any = ButtonClickEvents.left ) {
       if (el instanceof HTMLElement) {
           el.click();
       } else {
           el.triggerEventHandler('click', eventObj);
       }
-  }
+}
